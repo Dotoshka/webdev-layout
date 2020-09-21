@@ -170,8 +170,6 @@ h2 {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    display: flex;
-    align-items: flex-end;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #373737;
@@ -290,4 +288,42 @@ h2 {
     flex-basis: 407px;
     /* calc(100% - 43% - 248px)*/
     margin: 120px 139px 140px 109px;
+}
+
+.subscribe-container {
+    background-image: url(assets/images/image-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.subscribe-content {
+    width: 406px;
+    margin: 200px auto 220px auto;
+}
+
+.subscribe-content h2 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.email-input {
+    width: 340px;
+    border: none;
+    padding-left: 24px;
+    color: rgba(55,55,55, .5);
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#subscribe-btn {
+    width: 66px;
 }
