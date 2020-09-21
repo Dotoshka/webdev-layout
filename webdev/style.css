@@ -20,26 +20,17 @@ html {
     margin: 0 auto;
 }
 
-.fixed {
-
-    height: 95px;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    /*width: 100vw;
-    max-width: 1600px;*/
-    width: 1600px;
-    margin: 0 auto;
-    
-}
-
 
 .header {
-    
+    height: 95px;
     margin: 0 auto;
     
 }
 
+h1 {
+    width: 1px;
+    height: 1px;
+}
 
 .navbar {
     width: 586px;
@@ -51,12 +42,13 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 22px;
+    padding-top: 25px;
 
 }
 
 .navbar ul li a {
     color: #FFF;
+    opacity: .8;
     text-decoration: none;
     justify-content: center;
     align-items: center;
@@ -65,7 +57,18 @@ html {
 
 .navbar ul li a:hover {
     border-bottom: 1px solid #FFF;
+    opacity: 1;
    
+}
+
+#active {
+    border-bottom: 1px solid #FFF;
+    opacity: 1;
+}
+
+#logo { 
+    opacity : 1;
+    margin: 0 15px; 
 }
 
 #logo:hover {
@@ -73,18 +76,22 @@ html {
 }
 
 
-.your-life {
+.your-life-container {
     background-image: url(assets/images/bg-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /*width: 100vw;
     height: 100vh;*/
-    
     overflow: hidden;
 }
 
-.your-life h1 {
+.your-life-content {
+    margin-top: 135px;
+    margin-bottom: 183px;
+}
+
+.your-life h2 {
     font-family: Roboto;
     font-weight: 700;
     font-size: 64px;
@@ -93,8 +100,7 @@ html {
     letter-spacing: 4.5px;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 100%;
-    margin: 231px auto 0 auto;
+    margin: o auto;
     
 }
 
@@ -133,12 +139,12 @@ html {
 }
 
 .your-life-btn {
-    margin: 0 auto 183px auto;
+    margin: 0 auto;
     width: fit-content;
 }
 
 .socials {
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 
 }
 
@@ -150,21 +156,25 @@ html {
     margin: 0 auto;
 }
 
+.socials ul li a:hover {
+    opacity: 0.8;
+}
+
 .content-par {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 140%;
+    line-height: 20px;
     color: #4E4E4E;
     margin-bottom: 30px;
 }
 
 .bold {
-    font-weight: 700;
+    font-weight: 500;
 }
 
-h2 {
+h3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -183,15 +193,19 @@ h2 {
 }
 
 .rappresent-content {
-    flex-basis: 407px;
-    margin: 295px 248px 0 109px;
+    width: 407px;
+    margin: 295px 248px 312px 109px;
+}
+
+.rappresent-content h3 {
+    max-width: 380px;
 }
 
 .rappresent-img {
-    flex-basis: 407px;
+    width: 407px;
     /* calc(100% - 43% - 248px)*/
     margin-top: 120px;
-    margin-bottom: 140px;
+    margin-bottom: 138px;
 }
 
 .community-container,
@@ -228,7 +242,7 @@ h2 {
 
 .slider-items {
     max-width: 83px;
-    margin-left: 548px;
+    margin-left: 542px;
     margin-bottom: 20px;
     font-family: Roboto;
     font-weight: normal;
@@ -258,7 +272,7 @@ h2 {
     margin: 0 auto 20px auto;
 }
 
-.community-content h3 {
+.community-content h4 {
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
@@ -281,15 +295,19 @@ h2 {
 }
 
 .implement-content {
-    flex-basis: 407px;
+    width: 407px;
     margin-top: 319px;
     margin-bottom: 339px;
 }
 
 .implement-img {
-    flex-basis: 407px;
+    width: 410px;
     /* calc(100% - 43% - 248px)*/
     margin: 120px 139px 140px 109px;
+}
+
+#implement-btn {
+    width: 180px;
 }
 
 .subscribe-container {
@@ -301,18 +319,18 @@ h2 {
 }
 
 .subscribe-content {
-    width: 406px;
+    width: 407px;
     margin: 200px auto 220px auto;
 }
 
-.subscribe-content h2 {
+.subscribe-content h3 {
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .subscribe-form {
     display: flex;
-    margin-bottom: 30px;
 }
 
 .email-input {
@@ -339,11 +357,13 @@ h2 {
     margin-bottom: 30px;
 }
 
-.download-content h2 {
+.download-content h3 {
     text-align: center;
 }
 
 .download-btns {
+    width: 462px;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -403,4 +423,9 @@ footer {
 .production {
     color: #818181;
     width: 236px;
+    text-align: right;
+}
+
+.market:hover {
+    transform: scale(1.2);
 }
