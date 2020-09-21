@@ -194,8 +194,10 @@ h2 {
     margin-bottom: 140px;
 }
 
-.community-container {
+.community-container,
+.download-container {
     background-color: #F5F6F7;
+    overflow: hidden;
 }
 
 .community {
@@ -268,7 +270,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.community-content p {
+.center-par {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -326,4 +328,40 @@ h2 {
 
 #subscribe-btn {
     width: 66px;
+}
+
+.download-content {
+    width: 480px;
+    margin: 120px auto 180px auto;
+}
+
+.download-content p {
+    margin-bottom: 30px;
+}
+
+.download-content h2 {
+    text-align: center;
+}
+
+.download-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.appstore-btn,
+.android-btn {
+    display: flex;
+}
+
+.download-icon {
+    background-color:  #009CC2;
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#appstore-btn,
+#android-btn {
+    width: 127px;
 }
